@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robotique. Automatisation. Industrie. | ROBOT+ Automatisme</title>
+  <meta name="description" content="ROBOT+ — robotique, automatisation, contrôle et machines spéciales à Marnaz.">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ3Z4l3M6J4VQp4YJYhF1Y5aZ5Yx1A=" crossorigin=""/>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root{
+  --yellow:#ffea00;
+  --yellow-dark:#e6d200;
+  --black:#0c1115;
+  --black2:#121a1f;
+  --dark:#172127;
+  --grey:#5c6266;
+  --light:#f5f6f4;
+  --white:#fff;
+  --max:1440px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:#111820;font-family:Inter,Arial,sans-serif}
+a{color:inherit}
+.site-header{height:82px;background:#0b1014;color:#fff;position:sticky;top:0;z-index:100;border-bottom:1px solid #20282d}
+.header-inner{max-width:1440px;height:100%;margin:auto;padding:0 38px;display:flex;align-items:center;gap:32px}
+.logo-link{width:185px;display:flex;align-items:center;flex-shrink:0}
+.logo-link img{width:100%;height:auto;display:block}
+.main-nav{height:100%;display:flex;align-items:center;gap:31px;margin-left:auto}
+.main-nav a{height:100%;display:flex;align-items:center;text-decoration:none;font-size:13px;font-weight:700;position:relative;white-space:nowrap}
+.main-nav a.active{color:var(--yellow)}
+.main-nav a.active:after{content:"";height:3px;background:var(--yellow);position:absolute;bottom:0;left:0;right:0}
+.header-contact{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:700;white-space:nowrap;margin-left:12px}
+.header-contact a{text-decoration:none}
+.phone-icon{font-size:21px;transform:rotate(-35deg);display:inline-block}
+.lang{margin-left:18px;font-weight:600}.flag{font-size:15px;margin-right:6px}
+.nav-toggle{display:none}
+
+.hero{height:525px;position:relative;overflow:hidden;background:#111}
+.hero-photo{position:absolute;inset:0;background-image:url('assets/images/hero-approved-rendering.jpg');background-size:cover;background-position:center 52%;filter:saturate(.95)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,11,14,.97) 0%,rgba(7,11,14,.88) 31%,rgba(7,11,14,.12) 61%,rgba(7,11,14,.02) 100%)}
+.hero-content{position:relative;z-index:2;width:min(100% - 100px,1440px);margin:auto;padding-top:80px;color:white}
+.yellow-slash{width:22px;height:160px;background:var(--yellow);transform:skew(-18deg);position:absolute;left:-35px;top:31px}
+.eyebrow{font-size:10px;letter-spacing:.18em;color:#aab0b3;font-weight:800;margin-bottom:15px}
+.hero h1{font-family:'Barlow Condensed',Arial,sans-serif;font-size:67px;line-height:.9;letter-spacing:-.03em;margin:0 0 18px;font-weight:800}
+.hero h1 span{color:var(--yellow)}
+.hero p{font-size:17px;line-height:1.35;font-weight:600;margin:0 0 22px}
+.yellow-button{display:inline-flex;align-items:center;gap:34px;background:var(--yellow);color:#111820;text-decoration:none;padding:11px 16px 11px 19px;font-size:13px;font-weight:800;min-width:196px;justify-content:space-between}
+.yellow-button b{font-size:20px;line-height:1}
+.yellow-button:hover{background:#fff}.yellow-button.small{min-width:135px;padding:10px 13px 10px 15px;gap:20px}
+
+.capabilities{height:130px;background:#131c21;display:grid;grid-template-columns:repeat(7,1fr);max-width:100%;overflow:hidden}
+.capability{position:relative;color:#fff;text-decoration:none;padding:24px 16px 15px 30px;border-right:1px solid #29343a;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.capability:before{content:"";position:absolute;left:-30px;top:-10px;height:160px;width:48px;background:#263239;transform:skew(-18deg)}
+.capability:hover{background:#1a252b}
+.cap-icon{height:38px;color:var(--yellow);font-size:29px;line-height:1;margin-bottom:9px;font-family:Arial}
+.capability strong{font-size:12px;line-height:1.25;z-index:1}.capability>span{color:var(--yellow);font-size:22px;margin-top:4px}
+
+.section{max-width:1440px;margin:auto}
+.company{min-height:350px;padding:44px 38px 35px;display:grid;grid-template-columns:1.15fr 1.15fr .68fr;gap:28px;align-items:center}
+.company-copy{position:relative;padding-left:20px}.section-marker{position:absolute;left:0;top:0;width:13px;height:28px;background:var(--yellow);transform:skew(-18deg)}
+.section-kicker{font-size:20px;font-weight:800;margin-bottom:2px;color:#19242b}
+.company h2{font-family:'Barlow Condensed',Arial,sans-serif;font-size:22px;margin:0 0 14px;letter-spacing:-.02em}
+.company p{font-size:12px;line-height:1.55;margin:0 0 8px;max-width:500px}.company .small{margin-top:10px}
+.company-photo-wrap{height:235px;position:relative;overflow:hidden;transform:skew(-5deg)}
+.company-photo-wrap:after{content:"";position:absolute;right:-2px;top:0;width:16px;height:100%;background:var(--yellow);transform:skew(-10deg)}
+.company-photo-wrap img{width:100%;height:100%;object-fit:cover;transform:skew(5deg) scale(1.06);object-position:center 65%}
+.company-facts{background:#f0f1f1;height:235px;padding:20px 20px;display:flex;flex-direction:column;justify-content:center;gap:16px;font-size:11px}
+.company-facts div{display:flex;gap:15px;align-items:flex-start}.fact-icon{font-size:20px;width:25px;text-align:center;color:#18242a}.company-facts b{font-size:11px}
+
+.solutions{padding:5px 38px 45px}
+.section-title{position:relative;padding-left:20px;margin:0 0 22px}.section-title .section-marker{top:2px}.section-title h2{font-family:'Barlow Condensed',Arial,sans-serif;font-size:29px;margin:0;font-weight:800;letter-spacing:-.02em}
+.solution-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.solution-card{background:#172127;color:#fff;min-width:0}
+.solution-image{height:130px;background-size:cover;background-position:center;position:relative}
+.solution-image:after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(0,0,0,.25))}
+.solution-image.robot{background-image:url('assets/images/hero-approved-rendering.jpg')}
+.solution-image.control{background-image:url('assets/images/building-approved-rendering.jpg');background-position:45% 30%}
+.solution-image.laser{background-image:url('assets/images/reference-sheet.jpg');background-position:42% 65%}
+.solution-image.conveyor{background-image:url('assets/images/building-approved-rendering.jpg');background-position:65% 70%}
+.solution-image.dewater{background-image:url('assets/images/building-approved-rendering.jpg')}
+.solution-image.workstation{background-image:url('assets/images/hero-approved-rendering.jpg');background-position:65% 70%}
+.solution-image.transfer{background-image:url('assets/images/hero-approved-rendering.jpg');background-position:75% center}
+.solution-image.special{background-image:url('assets/images/building-approved-rendering.jpg');background-position:20% center}
+.solution-body{padding:11px 13px 13px;min-height:76px}
+.solution-body h3{font-family:'Barlow Condensed',Arial,sans-serif;font-size:14px;line-height:1.05;margin:0 0 5px;font-weight:800}
+.solution-body h3 span{float:right;color:var(--yellow);font-family:Arial;font-size:19px}
+.solution-body p{font-size:9px;line-height:1.35;color:#e3e6e7;margin:0}
+
+.project-cta{height:205px;display:grid;grid-template-columns:1.08fr 1fr;background:#10181d;color:#fff;overflow:hidden}
+.project-dark{padding:28px 45px;position:relative}.project-dark .section-marker{left:45px;top:28px}
+.project-dark h2{font-family:'Barlow Condensed',Arial,sans-serif;font-size:27px;line-height:1.02;margin:0 0 10px;padding-left:25px}.project-dark h2 span{color:var(--yellow)}
+.project-dark p{font-size:11px;line-height:1.45;margin:0 0 13px;padding-left:25px}.project-dark .small{margin-left:25px}
+.project-photo{background-image:url('assets/images/hero-approved-rendering.jpg');background-size:cover;background-position:center 44%;position:relative}
+.project-photo:before{content:"";position:absolute;left:-20px;top:-20px;height:260px;width:36px;background:var(--yellow);transform:skew(-17deg)}
+
+.footer{background:#0c1419;color:#fff}
+.footer-main{max-width:1440px;margin:auto;padding:24px 38px 22px;display:grid;grid-template-columns:1.2fr 1.3fr 1.25fr .75fr;align-items:center;gap:35px;min-height:135px}
+.footer-brand img{width:180px;max-height:72px;object-fit:contain;object-position:left center}
+.footer-contact{border-right:1px solid #344047;padding-right:25px;font-size:10px}.footer-contact p{display:flex;gap:12px;margin:6px 0}.footer-contact p:first-letter{color:var(--yellow)}
+.footer-map{display:flex;align-items:center;gap:18px;font-size:10px}.map-placeholder{width:95px;height:72px;background:#313a3f;clip-path:polygon(20% 10%,40% 0,55% 12%,70% 6%,88% 27%,80% 42%,95% 56%,75% 74%,57% 70%,48% 92%,25% 82%,12% 62%,4% 39%);display:grid;place-items:center;color:var(--yellow);font-size:27px}
+.footer-tagline{border-left:2px solid var(--yellow);padding-left:22px;font-family:'Barlow Condensed',Arial,sans-serif;font-size:18px;line-height:1.05;color:#7d8589;font-weight:800}.footer-tagline div{width:25px;height:3px;background:var(--yellow);margin-top:10px}
+.footer-bottom{max-width:1440px;margin:auto;border-top:1px solid #273238;padding:12px 38px 18px;display:flex;justify-content:space-between;font-size:8px;color:#727a7e}
+
+@media(max-width:1050px){
+  .main-nav{gap:17px}.header-inner{padding:0 22px}.header-contact{display:none}
+  .hero-content{width:min(100% - 80px,1440px)}
+  .capability{padding-left:20px}.capability strong{font-size:10px}
+  .company{grid-template-columns:1fr 1fr}.company-facts{grid-column:1/-1;height:auto;display:grid;grid-template-columns:repeat(2,1fr)}
+  .solution-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:720px){
+  .site-header{height:70px}.header-inner{padding:0 18px}.logo-link{width:155px}.nav-toggle{display:flex;margin-left:auto;background:none;border:0;flex-direction:column;gap:4px;padding:8px}.nav-toggle span{width:24px;height:2px;background:white}.main-nav{position:absolute;top:70px;left:0;right:0;background:#0b1014;height:auto;display:none;flex-direction:column;align-items:stretch;padding:10px 20px 18px;gap:0}.main-nav.open{display:flex}.main-nav a{height:44px}.main-nav a.active:after{bottom:2px}.hero{height:570px}.hero-photo{background-position:68% center}.hero-content{padding-top:78px;width:calc(100% - 48px)}.hero h1{font-size:55px}.yellow-slash{left:-28px}.capabilities{height:auto;grid-template-columns:repeat(2,1fr)}.capability{min-height:108px;padding:18px}.capability:nth-child(7){grid-column:1/-1}.company{padding:38px 24px;grid-template-columns:1fr}.company-photo-wrap{height:210px}.company-facts{grid-column:auto;display:flex;height:auto}.solutions{padding:15px 18px 35px}.solution-grid{grid-template-columns:1fr 1fr;gap:10px}.solution-image{height:120px}.solution-body{min-height:90px}.project-cta{height:auto;grid-template-columns:1fr}.project-dark{padding:35px 25px 38px}.project-photo{height:220px}.footer-main{padding:28px 24px;grid-template-columns:1fr;gap:20px}.footer-contact{border-right:0;border-bottom:1px solid #344047;padding:0 0 18px}.footer-map{border-bottom:1px solid #344047;padding-bottom:18px}.footer-tagline{border-left:0;border-top:2px solid var(--yellow);padding:15px 0 0}.footer-bottom{padding:12px 24px;display:block}.footer-bottom span{display:block;margin-bottom:8px}
+}
+
+  
+/* Approved rendering assets + icon refinements */
+.fact-icon svg, .footer-icon svg{width:23px;height:23px;display:block;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fact-icon{color:#172127}
+.footer-icon{color:var(--yellow);width:24px;display:inline-flex;flex:0 0 24px}
+.footer-contact p{align-items:flex-start}
+.company-photo-wrap{transform:none;height:235px;background:#fff}
+.company-photo-wrap img{transform:none;width:100%;height:100%;object-fit:cover;object-position:center}
+.company-photo-wrap:after{display:none}
+.france-map{height:72px;width:130px;overflow:hidden;background:#283238;border:1px solid #3a464c}
+.map-label{font-size:10px;line-height:1.35}
+.map-label strong{font-size:11px}
+.custom-yellow-pin{position:relative}
+.custom-yellow-pin span{
+  position:absolute;left:3px;top:0;width:18px;height:18px;background:var(--yellow);
+  border:2px solid #111820;border-radius:50% 50% 50% 0;transform:rotate(-45deg);
+  box-shadow:0 2px 6px rgba(0,0,0,.35)
+}
+.custom-yellow-pin span:after{
+  content:"";position:absolute;left:4px;top:4px;width:6px;height:6px;background:#111820;border-radius:50%
+}
+
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo-link" href="#accueil">
+      <img src="assets/images/robotplus-logo.png" alt="ROBOT+ Automatisme">
+    </a>
+
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav">
+      <a class="active" href="#accueil">Accueil</a>
+      <a href="#entreprise">L'entreprise</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#actualites">Actualités</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-contact">
+      <span class="phone-icon">⌕</span>
+      <a href="tel:+33450963828">+33 4 50 96 38 28</a>
+      <span class="lang"><span class="flag">🇫🇷</span> FR⌄</span>
+    </div>
+  </div>
+</header>
+
+<main id="accueil">
+
+<section class="hero">
+  <div class="hero-photo"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="yellow-slash"></div>
+    <div class="eyebrow">MARNaz · HAUTE-SAVOIE · FRANCE</div>
+    <h1>Robotique.<br>Automatisation.<br><span>Industrie.</span></h1>
+    <p>Des solutions sur mesure pour<br>une production plus performante.</p>
+    <a class="yellow-button" href="#solutions">Découvrir nos solutions <b>→</b></a>
+  </div>
+</section>
+
+<section class="capabilities">
+  <a href="#solutions" class="capability">
+    <div class="cap-icon">♙</div><strong>Robotique<br>industrielle</strong><span>→</span>
+  </a>
+  <a href="#solutions" class="capability">
+    <div class="cap-icon">◎</div><strong>Contrôle<br>& vision</strong><span>→</span>
+  </a>
+  <a href="#solutions" class="capability">
+    <div class="cap-icon">⚙</div><strong>Machines spéciales<br>& bureau d'études</strong><span>→</span>
+  </a>
+  <a href="#solutions" class="capability">
+    <div class="cap-icon">▱</div><strong>Alimentation, convoyage<br>& stockage</strong><span>→</span>
+  </a>
+  <a href="#solutions" class="capability">
+    <div class="cap-icon">✣</div><strong>Marquage laser</strong><span>→</span>
+  </a>
+  <a href="#solutions" class="capability">
+    <div class="cap-icon">◔</div><strong>Dewatering &<br>dégraissage</strong><span>→</span>
+  </a>
+  <a href="#solutions" class="capability">
+    <div class="cap-icon">♙</div><strong>Postes de travail</strong><span>→</span>
+  </a>
+</section>
+
+<section id="entreprise" class="company section">
+  <div class="company-copy">
+    <div class="section-marker"></div>
+    <div class="section-kicker">ROBOTPLUS</div>
+    <h2>Une expertise au service de votre industrie</h2>
+    <p>Depuis 1996, ROBOTPLUS conçoit et intègre des solutions d’automatisation adaptées à vos besoins.</p>
+    <p>Notre expertise en robotique, en vision et en machines spéciales nous permet d’accompagner vos projets, de l’étude à la mise en service, sur les secteurs les plus exigeants.</p>
+    <a class="yellow-button small" href="#contact">En savoir plus <b>→</b></a>
+  </div>
+
+  <div class="company-photo-wrap">
+    <img src="assets/images/building-approved-rendering.jpg" alt="Bâtiment ROBOT+ à Marnaz">
+  </div>
+
+  <aside class="company-facts">
+    <div>
+      <span class="fact-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2"></rect><path d="M8 3v4M16 3v4M4 9h16M8 13h2M14 13h2M8 17h2"></path></svg>
+      </span>
+      <span><b>Depuis 1996</b><br>à vos côtés</span>
+    </div>
+    <div>
+      <span class="fact-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+      </span>
+      <span>369 rue des Abeilles<br>74460 Marnaz<br>France</span>
+    </div>
+    <div>
+      <span class="fact-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h3l2 5-2 2c1 2 2 3 4 4l2-2 4 2v3c0 1-1 2-2 2C10 20 4 14 4 6c0-1 1-2 3-2Z"></path></svg>
+      </span>
+      <span>+33 4 50 96 38 28</span>
+    </div>
+    <div>
+      <span class="fact-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></svg>
+      </span>
+      <span>robotplus@orange.fr</span>
+    </div>
+  </aside>
+</section>
+
+<section id="solutions" class="solutions section">
+  <div class="section-title">
+    <div class="section-marker"></div>
+    <h2>Nos solutions</h2>
+  </div>
+
+  <div class="solution-grid">
+    <article class="solution-card">
+      <div class="solution-image robot"></div>
+      <div class="solution-body"><h3>Robotique industrielle <span>→</span></h3><p>Anthropomorphes, SCARA,<br>manipulateurs, portiques...</p></div>
+    </article>
+    <article class="solution-card">
+      <div class="solution-image control"></div>
+      <div class="solution-body"><h3>Contrôle & vision <span>→</span></h3><p>Dimensionnel, caméra, laser,<br>palpeurs, courant de Foucault...</p></div>
+    </article>
+    <article class="solution-card">
+      <div class="solution-image laser"></div>
+      <div class="solution-body"><h3>Marquage laser <span>→</span></h3><p>Datamatrix, lecture de code,<br>marquage sur pièces...</p></div>
+    </article>
+    <article class="solution-card">
+      <div class="solution-image conveyor"></div>
+      <div class="solution-body"><h3>Alimentation, convoyage & stockage <span>→</span></h3><p>Bol vibrant, convoyeurs, élévateurs,<br>trémies, tables rotatives...</p></div>
+    </article>
+
+    <article class="solution-card">
+      <div class="solution-image dewater"></div>
+      <div class="solution-body"><h3>Dewatering & dégraissage <span>→</span></h3><p>Lavage, dégraissage, huilage,<br>antirouille...</p></div>
+    </article>
+    <article class="solution-card">
+      <div class="solution-image workstation"></div>
+      <div class="solution-body"><h3>Postes de travail <span>→</span></h3><p>Contrôle, montage, conditionnement,<br>avec options (écran, code barre...)</p></div>
+    </article>
+    <article class="solution-card">
+      <div class="solution-image transfer"></div>
+      <div class="solution-body"><h3>Robotisation machine transfert <span>→</span></h3><p>Exemple : Staubli TX2-40 / CS9<br>(voir détail)</p></div>
+    </article>
+    <article class="solution-card">
+      <div class="solution-image special"></div>
+      <div class="solution-body"><h3>Machines spéciales & bureau d'études <span>→</span></h3><p>Solutions sur mesure, conception,<br>intégration, mise en service...</p></div>
+    </article>
+  </div>
+</section>
+
+<section id="realisations" class="project-cta">
+  <div class="project-dark">
+    <div class="section-marker"></div>
+    <h2>Une solution sur mesure<br><span>pour chaque projet</span></h2>
+    <p>Des machines standards aux systèmes les plus complexes,<br>nous concevons des solutions adaptées à vos contraintes.</p>
+    <a class="yellow-button small" href="#contact">Nous contacter <b>→</b></a>
+  </div>
+  <div class="project-photo"></div>
+</section>
+
+<footer id="contact" class="footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <img src="assets/images/robotplus-logo.png" alt="ROBOT+ Automatisme">
+    </div>
+    <div class="footer-contact">
+      <p><span class="footer-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+      </span><span>369 rue des Abeilles<br>74460 Marnaz<br>France</span></p>
+      <p><span class="footer-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h3l2 5-2 2c1 2 2 3 4 4l2-2 4 2v3c0 1-1 2-2 2C10 20 4 14 4 6c0-1 1-2 3-2Z"></path></svg>
+      </span><span>+33 4 50 96 38 28</span></p>
+      <p><span class="footer-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></svg>
+      </span><span>robotplus@orange.fr</span></p>
+    </div>
+    <div class="footer-map">
+      <div id="france-map" class="france-map" aria-label="Carte de France avec localisation de Marnaz"></div>
+      <div class="map-label"><strong>Marnaz</strong><br>Haute-Savoie</div>
+    </div>
+    <div class="footer-tagline">Robotique<br>Automatisation<br>Industrie<div></div></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 ROBOTPLUS. Tous droits réservés.</span>
+    <span>Mentions légales &nbsp;&nbsp; | &nbsp;&nbsp; Politique de confidentialité &nbsp;&nbsp; | &nbsp;&nbsp; Plan du site</span>
+  </div>
+</footer>
+
+</main>
+<script>
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.main-nav');
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+}
+
+</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function () {
+  const el = document.getElementById('france-map');
+  if (!el || typeof L === 'undefined') return;
+  const map = L.map(el, {
+    zoomControl: false,
+    scrollWheelZoom: false,
+    dragging: false,
+    doubleClickZoom: false,
+    boxZoom: false,
+    keyboard: false,
+    tap: false
+  }).setView([46.087, 6.500], 5.45);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap'
+  }).addTo(map);
+  const pin = L.divIcon({
+    className: 'custom-yellow-pin',
+    html: '<span></span>',
+    iconSize: [24, 32],
+    iconAnchor: [12, 30]
+  });
+  L.marker([46.087, 6.500], {icon: pin}).addTo(map).bindPopup('<b>ROBOT+</b><br>369 rue des Abeilles<br>74460 Marnaz');
+})();
+</script>
+</body>
+</html>

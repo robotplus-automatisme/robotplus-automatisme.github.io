@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'fr' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d0e">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="ROBOT+ accueil">
+        <img src="{{ '/assets/robotplus-logo.png' | relative_url }}" alt="ROBOT+ Automatisme">
+      </a>
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">Menu</button>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="{{ '/' | relative_url }}">Accueil</a>
+        <a href="{{ '/entreprise/' | relative_url }}">L'entreprise</a>
+        <a href="{{ '/solutions/' | relative_url }}">Solutions</a>
+        <a href="{{ '/references/' | relative_url }}">Réalisations</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+        <span class="lang-switch"><strong>FR</strong><span>EN</span></span>
+      </nav>
+    </div>
+  </header>
+  <main>{{ content }}</main>
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div>
+        <img class="footer-logo" src="{{ '/assets/robotplus-logo.png' | relative_url }}" alt="ROBOT+ Automatisme">
+        <p class="footer-tagline">Automatisme · Robotique · Bureau d'études</p>
+      </div>
+      <div class="footer-contact"><span>369 rue des Abeilles</span><span>74460 Marnaz · France</span></div>
+      <div class="footer-contact"><span>+33 (0)4 50 96 38 28</span><span>robotplus@orange.fr</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© {{ 'now' | date: '%Y' }} ROBOTPLUS S.A.R.L.</span><span>R.C.S. Annecy · S.I.R.E.T. 407 664 119 000 36</span></div>
+  </footer>
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

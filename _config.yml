@@ -1,0 +1,13 @@
+title: "ROBOT+ Automatisme"
+description: "Robotique, automatisation et industrie à Marnaz."
+url: ""
+baseurl: ""
+lang: "fr"
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

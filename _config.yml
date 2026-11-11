@@ -1,7 +1,0 @@
-title: "ROBOT+ Automatisme"
-description: "Robotique, automatisation, contrôle et machines spéciales à Marnaz."
-markdown: kramdown
-plugins:
-  - jekyll-seo-tag
-exclude:
-  - README.md

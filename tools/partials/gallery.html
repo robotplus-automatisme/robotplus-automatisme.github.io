@@ -1,0 +1,12 @@
+<section class="rp-photo-gallery" aria-labelledby="gallery-title">
+  <h2 id="gallery-title" data-i18n="gallery.title">Exemples de réalisations</h2>
+  <div class="rp-slideshow" role="region" aria-roledescription="carousel" aria-label="Exemples de réalisations" data-i18n-aria="gallery.title">
+    <div class="rp-slideshow-stage">
+{{slides}}
+      <button class="rp-slide-arrow prev" type="button" aria-label="Photo précédente" data-i18n-aria="gallery.prev">‹</button>
+      <button class="rp-slide-arrow next" type="button" aria-label="Photo suivante" data-i18n-aria="gallery.next">›</button>
+    </div>
+    <div class="rp-slide-dots" role="group" aria-label="Choisir une photo" data-i18n-aria="gallery.choose"></div>
+  </div>
+  <p class="rp-slide-counter" aria-live="polite">Photo 1 sur {{count}}</p>
+</section>

@@ -1,0 +1,9 @@
+# macOS / Windows clutter
+.DS_Store
+._*
+Thumbs.db
+# local Jekyll preview output
+_site/
+.jekyll-cache/
+# Python cache from the tools
+__pycache__/

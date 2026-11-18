@@ -114,6 +114,8 @@ a{color:inherit}
 .detail-copy p{font-size:15px;color:#dfe3e5;padding-left:25px}
 .detail-visual{min-height:330px;position:relative;background:#26323a}
 .detail-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+/* while a photo is still downloading, some browsers write its alt text in the empty frame: keep the frame empty */
+main img{color:transparent}
 .detail-main{max-width:1180px;margin:auto;padding:55px 30px 70px}
 .detail-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:45px}
 .detail-section h2{font-family:var(--head-font);font-size:29px;margin:0 0 18px}

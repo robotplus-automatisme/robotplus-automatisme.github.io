@@ -1,5 +1,6 @@
 /* ROBOT+ Automatisme — shared behaviour for every page:
-   mobile menu, language menu, translations (texts live in assets/js/i18n.js) and photo galleries. */
+   mobile menu, language menu, translations (French is written in the pages, the other languages are in
+   assets/js/i18n.js) and photo galleries. */
 (function () {
   'use strict';
 
@@ -24,16 +25,44 @@
   function store(lang) {
     try { window.localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* private mode: ignore */ }
   }
-  function t(key, lang) {
-    var entry = DICT[key];
-    if (!entry) return null;
-    lang = lang || current;
-    return entry[lang] != null && entry[lang] !== '' ? entry[lang] : (entry.fr != null ? entry.fr : null);
-  }
   function plain(text) {
     var div = document.createElement('div');
     div.innerHTML = text;
     return (div.textContent || '').replace(/\s+/g, ' ').trim();
+  }
+
+  /* French is the text written in the HTML page itself, so editing the page is enough: nothing overwrites it.
+     The other languages come from assets/js/i18n.js, found through the key of data-i18n="key".
+     A text without translation (yet) is shown in French. */
+  var original = new Map();           // element -> its French as written in the page: { html, alt, aria }
+  var shown = new Map();              // element -> the HTML it currently displays (avoids pointless rewrites)
+  var frenchOf = Object.create(null); // key -> French of the first element that uses it
+  var frenchTitle = document.title;
+  function remember(key, text) { if (!(key in frenchOf)) frenchOf[key] = text; }
+  document.querySelectorAll('[data-i18n]').forEach(function (el) {
+    var o = { html: el.innerHTML };
+    original.set(el, o);
+    shown.set(el, o.html);
+    remember(el.getAttribute('data-i18n'), o.html);
+  });
+  document.querySelectorAll('[data-i18n-alt],[data-i18n-aria]').forEach(function (el) {
+    var o = original.get(el) || {};
+    if (el.hasAttribute('data-i18n-alt')) { o.alt = el.getAttribute('alt') || ''; remember(el.getAttribute('data-i18n-alt'), o.alt); }
+    if (el.hasAttribute('data-i18n-aria')) { o.aria = el.getAttribute('aria-label') || ''; remember(el.getAttribute('data-i18n-aria'), o.aria); }
+    original.set(el, o);
+  });
+  // the translation of a key in a language other than French, or null when there is none
+  function translation(key, lang) {
+    var entry = DICT[key];
+    return lang !== 'fr' && entry && entry[lang] ? entry[lang] : null;
+  }
+  // text for scripts (page title, photo counter): translation, else French as written in the page, else French of i18n.js
+  function t(key, lang) {
+    var tr = translation(key, lang || current);
+    if (tr != null) return tr;
+    if (key in frenchOf) return frenchOf[key];
+    var entry = DICT[key];
+    return entry && entry.fr != null ? entry.fr : null;
   }
 
   /* ---------- mobile navigation ---------- */
@@ -85,19 +114,24 @@
     current = lang;
     html.lang = lang;
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
-      var value = t(el.getAttribute('data-i18n'), lang);
-      if (value != null) el.innerHTML = value;
+      var o = original.get(el);
+      if (!o) return;                       // added to the page after it loaded: leave it as written
+      var value = translation(el.getAttribute('data-i18n'), lang);
+      if (value == null) value = o.html;    // French, or no translation yet
+      if (shown.get(el) !== value) { el.innerHTML = value; shown.set(el, value); }
     });
     document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
-      var value = t(el.getAttribute('data-i18n-alt'), lang);
-      if (value != null) el.setAttribute('alt', plain(value));
+      var o = original.get(el);
+      var value = translation(el.getAttribute('data-i18n-alt'), lang);
+      if (o) el.setAttribute('alt', value != null ? plain(value) : o.alt);
     });
     document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
-      var value = t(el.getAttribute('data-i18n-aria'), lang);
-      if (value != null) el.setAttribute('aria-label', plain(value));
+      var o = original.get(el);
+      var value = translation(el.getAttribute('data-i18n-aria'), lang);
+      if (o) el.setAttribute('aria-label', value != null ? plain(value) : o.aria);
     });
-    var title = t('page.' + page + '.title', lang);
-    if (title != null) document.title = plain(title) + ' | ROBOT+ Automatisme';
+    var title = translation('page.' + page + '.title', lang);
+    document.title = title != null ? plain(title) + ' | ROBOT+ Automatisme' : frenchTitle;
     var flag = document.getElementById('lang-flag');
     if (flag) { flag.src = root + 'assets/icons/flags/' + lang + '.svg'; flag.alt = NAMES[lang]; }
     var code = document.getElementById('lang-code');

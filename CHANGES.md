@@ -1,4 +1,59 @@
-# Changes — 14 November 2026
+# Update — 18 November 2026
+
+Follow-up to the rebuild, after two problems reported on the Robotique page. The edits made on github.com to
+`solutions/robotique-industrielle.html` (new subtitle, "Cellules standards de robotique collaborative." and the
+extra paragraph) are kept.
+
+## What was wrong
+
+1. **A text edited in an HTML page showed for a moment, then went back to the old one.** The texts of every language,
+   French included, were stored in `assets/js/i18n.js` and written into the page when it loaded, so the French in
+   the HTML was never what the visitor saw. The README sent you to `i18n.js` for any text change, but editing the
+   page itself is the natural thing to do, and it has to work.
+2. **The picture next to the title first showed a text.** The photo carried an alt text (the page title) that some
+   browsers write in the empty frame until the file has downloaded.
+
+## What changed
+
+- **French is now the text written in the page**, and nothing overwrites it. `assets/js/i18n.js` only provides the
+  six other languages; a text with no translation yet (a paragraph you have just added, for instance) is shown in
+  French in those languages. `assets/js/site.js` and `tools/update_site.py` were reworked for this: the script no
+  longer writes French into the pages. It keeps the reference `"fr"` copy of `i18n.js` up to date, adds an empty
+  line for each new key, lists the texts whose French changed (their translations are to review) and warns when one
+  key is used with two different French texts. See "Texts and translations" in `README.md`.
+- The legal line of the footer (SARL, SIREN…) used to exist only in `i18n.js`; it is now in `tools/partials/footer.html`.
+- **New subtitle** "ROBOTPLUS — Robotique, contrôle, machines spéciales." on the 7 pages that carried the old one
+  (Robotique industrielle, Machines de contrôle, Contrôle laser, Machines spéciales, Rétrofit machines, Postes de
+  travail, Lavage-dewatering-dégraissage), translated into the 6 other languages with the wording of the footer
+  slogan. The Alimentation pages have their own subtitle and are unchanged.
+- **Robotique page**: "Cellules standards de robotique collaborative." is translated into the 6 languages;
+  "Réalisation de cellules sur mesure." keeps its translations under its new key `page.robotique-industrielle.lead4`.
+- **Photo next to the title** (15 pages): no alt text (it is decorative, the title is right beside it), the 800 px
+  file for ordinary screens (118 KB instead of 283 KB on Robotique; it is the file the homepage card uses, so it is
+  often already in the browser cache), the 1400 px file for sharp screens and phones, no asynchronous decoding.
+  The grey frame stays empty until the photo arrives. Every other photo of a page also hides its alt text while
+  loading (`main img{color:transparent}` in `site.css`).
+
+## How to install (26 files)
+
+    cd ~/mygit/robotplus-automatisme.github.io
+    git pull        # first: it fetches the edits made on github.com, which the update contains
+    unzip -o ~/Downloads/robotplus-update-2026-11-18.zip -d .
+    git status      # 26 modified files
+    git add -A
+    git commit -m "French text is written in the pages; new subtitle; header photo without flash"
+    git push
+
+Do not edit `solutions/robotique-industrielle.html` on github.com between the download and the push: the update
+replaces that file with the version of commit `792c30b` (14:31 on 18 November) plus the changes above.
+
+## To check
+
+- The translations of the new subtitle and of the collaborative-robotics sentence are mine: worth a look by native speakers.
+
+---
+
+# Rebuild — 14 November 2026 (already installed)
 
 Rebuild of the site from commit `16967a6` ("updating cover pic"). Same design and content,
 with the bugs, weight, structure, SEO and readability problems found in the code review fixed.

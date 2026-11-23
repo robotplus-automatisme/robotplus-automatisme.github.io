@@ -1,0 +1,349 @@
+{
+ "base": "controle-vision",
+ "page": "solutions/machines-controle.html",
+ "title": [
+  "Machines",
+  "de contrôle"
+ ],
+ "title_plain": "Machines de contrôle",
+ "subtitle": "Contrôle dimensionnel, vision, laser : des solutions standards et sur mesure.",
+ "highlight": [
+  "Machines de contrôle",
+  "Contrôle laser"
+ ],
+ "cover": {
+  "img": "categories/robotplus.fr-machine-controle.jpg",
+  "focus": [
+   0.42,
+   0.55
+  ]
+ },
+ "blocks": {
+  "title": {
+   "t": "title",
+   "lines": [
+    "Machines",
+    "de contrôle"
+   ]
+  },
+  "lead": {
+   "t": "lead",
+   "text": "Des machines de contrôle standards ou sur mesure."
+  },
+  "intro": {
+   "t": "p",
+   "text": "Pour répondre aux exigences de vos processus industriels, nous concevons et réalisons des machines de contrôle standards ou spécifiques, adaptées à vos besoins et à vos contraintes de production.",
+   "a4": {
+    "text": "Nous concevons et réalisons des machines de contrôle standards ou spécifiques, adaptées à vos besoins et à vos contraintes de production."
+   }
+  },
+  "h_app": {
+   "t": "h3",
+   "text": "Un large éventail d’applications"
+  },
+  "ctrl": {
+   "t": "rows",
+   "plain": true,
+   "items": [
+    "Contrôle dimensionnel de pièces mécaniques de précision",
+    "Contrôle en sortie de rectifieuse, avec asservissement de la machine pour un pilotage des cotes en temps réel",
+    "Contrôle d’aspect et détection des défauts visuels",
+    "Contrôle de montabilité des taraudages et filetages",
+    "Contrôle par courants de Foucault",
+    "Contrôle par vision industrielle et caméra",
+    "Contrôle dimensionnel par technologie laser",
+    "Contrôle par palpeurs de haute précision"
+   ]
+  },
+  "h_lignes": {
+   "t": "h3",
+   "text": "Optimisez vos lignes de production"
+  },
+  "lignes_p": {
+   "t": "p",
+   "text": "Nous développons aussi des lignes automatisées intégrées directement en sortie de vos machines de production. Une même ligne peut regrouper :",
+   "a4": {
+    "text": "Nous développons aussi des lignes automatisées intégrées en sortie de vos machines de production. Une même ligne peut regrouper :"
+   }
+  },
+  "lignes": {
+   "t": "rows",
+   "items": [
+    "Lavage des pièces",
+    "Contrôle dimensionnel et qualitatif",
+    "Pilotage et correction des cotes de la machine de production",
+    "Conditionnement des pièces conformes"
+   ],
+   "a4": {
+    "plain": true
+   }
+  },
+  "lignes_r": {
+   "t": "p",
+   "text": "Un contrôle continu de la production, une meilleure maîtrise de la qualité et **une réduction significative des rebuts**."
+  },
+  "quote": {
+   "t": "quote",
+   "text": "Notre objectif : des solutions fiables et performantes pour sécuriser votre production, optimiser vos process et garantir la conformité de vos pièces."
+  },
+  "apps": {
+   "t": "apps",
+   "title": "Applications",
+   "items": [
+    "Machines de contrôle dimensionnel",
+    "Machines de tri",
+    "Machines à plateau verre",
+    "Machines à plateaux indexeurs",
+    "Machines de contrôle en ligne avec la production",
+    "Posages de contrôle"
+   ]
+  },
+  "h_laser": {
+   "t": "h3",
+   "text": "Contrôle laser"
+  },
+  "laser_lead": {
+   "t": "lead",
+   "text": "Contrôle dimensionnel de haute précision et tri automatique des pièces."
+  },
+  "laser_p": {
+   "t": "p",
+   "text": "Pour la rectification centerless (enfilade ou plongée) et les machines spéciales : une mesure précise, fiable et répétable, directement en sortie de production.",
+   "a4": {
+    "text": "Conçue pour les applications de rectification centerless en enfilade ou en plongée, ainsi que pour les machines spéciales, notre solution de contrôle laser garantit une mesure dimensionnelle précise, fiable et répétable directement en sortie de production."
+   }
+  },
+  "laser_f": {
+   "t": "rows",
+   "items": [
+    "**Tri automatique OK / NOK** et tri selon les tolérances (hors mini, hors maxi)",
+    "**Répétabilité de mesure : ± 0,07 µm**",
+    "**Logiciel flexible** : monodiamètre ou multidiamètre",
+    "**Compensation thermique** pour des mesures fiables",
+    "**Asservissement de la rectifieuse** : correction automatique de la cote, si la machine est numérisée",
+    "**Nettoyage des pièces** pour fiabiliser le contrôle"
+   ]
+  },
+  "laser_opt": {
+   "t": "p",
+   "text": "**Options :** tunnel de déshuilage (dewatering), gestion des paniers, alimentation automatique.",
+   "a4": {
+    "text": "**Équipements complémentaires pour une ligne automatisée :** tunnel de déshuilage (dewatering) en sortie de contrôle, gestion automatisée des paniers pour plus d’autonomie, systèmes d’alimentation automatique adaptés aux rectifieuses."
+   }
+  },
+  "laser_apps": {
+   "t": "p",
+   "text": "**Applications :** rectification centerless, rectification plongée, machines spéciales."
+  },
+  "laser_mod": {
+   "t": "quote",
+   "text": "De la simple station de contrôle dimensionnel au système complet de contrôle, de tri et d’asservissement : une solution modulable adaptée à vos besoins."
+  },
+  "cta": {
+   "t": "cta",
+   "text": "Un besoin particulier ? Contactez-nous pour donner vie à votre projet."
+  },
+  "ph_a": {
+   "img": "machines-controle/13-robotplus.fr-machine-controle-13.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "t": "photo",
+   "fill": true
+  },
+  "ph_b": {
+   "img": "machines-controle/07-robotplus.fr-machine-controle-7.jpg",
+   "focus": [
+    0.5,
+    0.55
+   ],
+   "t": "photo",
+   "fill": true
+  },
+  "ph_laser": {
+   "t": "photos",
+   "cols": 2,
+   "fill": true,
+   "imgs": [
+    {
+     "img": "machines-controle-laser/01-robotplus.fr-controle-laser-1.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ]
+    },
+    {
+     "img": "machines-controle-laser/04-robotplus.fr-controle-laser-4.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ]
+    },
+    {
+     "img": "machines-controle-laser/05-robotplus.fr-controle-laser-5.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ]
+    },
+    {
+     "img": "machines-controle-laser/06-robotplus.fr-controle-laser-6.jpg",
+     "focus": [
+      0.5,
+      0.45
+     ]
+    }
+   ]
+  },
+  "ph_laser_a": {
+   "img": "machines-controle-laser/06-robotplus.fr-controle-laser-6.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "t": "photo",
+   "fill": true
+  },
+  "ph_laser_b": {
+   "img": "machines-controle-laser/03-robotplus.fr-controle-laser-3.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "t": "photo",
+   "fill": true
+  }
+ },
+ "tri": {
+  "A": [
+   "title",
+   "lead",
+   "intro",
+   "h_app",
+   "ctrl",
+   "ph_a"
+  ],
+  "B": [
+   "h_lignes",
+   "lignes_p",
+   "lignes",
+   "lignes_r",
+   "ph_b",
+   "quote",
+   "apps"
+  ],
+  "C": [
+   "h_laser",
+   "laser_lead",
+   "laser_p",
+   "laser_f",
+   "laser_opt",
+   "ph_laser",
+   "cta"
+  ]
+ },
+ "a4": {
+  "pages": [
+   {
+    "left": [
+     "lead",
+     "intro",
+     "h_app",
+     "ctrl",
+     "h_lignes",
+     "lignes_p",
+     "lignes",
+     "lignes_r"
+    ],
+    "right": [
+     "apps",
+     "quote",
+     "solutions"
+    ],
+    "strip": [
+     {
+      "img": "machines-controle/14-robotplus.fr-machine-controle-14.jpg",
+      "focus": [
+       0.45,
+       0.5
+      ]
+     },
+     {
+      "img": "machines-controle/07-robotplus.fr-machine-controle-7.jpg",
+      "focus": [
+       0.5,
+       0.55
+      ]
+     },
+     {
+      "img": "machines-controle/06-robotplus.fr-machine-controle-6.jpg",
+      "focus": [
+       0.5,
+       0.35
+      ]
+     },
+     {
+      "img": "machines-controle/13-robotplus.fr-machine-controle-13.jpg",
+      "focus": [
+       0.5,
+       0.5
+      ]
+     }
+    ],
+    "strip_h": 26
+   },
+   {
+    "head": "slim",
+    "slim_title": [
+     "Contrôle laser"
+    ],
+    "hero": null,
+    "left": [
+     "laser_lead",
+     "laser_p",
+     "laser_f",
+     "laser_opt",
+     "laser_apps",
+     "laser_mod",
+     "cta"
+    ],
+    "right": [
+     "ph_laser_a",
+     "ph_laser_b"
+    ],
+    "strip": [
+     {
+      "img": "machines-controle-laser/01-robotplus.fr-controle-laser-1.jpg",
+      "focus": [
+       0.5,
+       0.5
+      ]
+     },
+     {
+      "img": "machines-controle-laser/04-robotplus.fr-controle-laser-4.jpg",
+      "focus": [
+       0.5,
+       0.5
+      ]
+     },
+     {
+      "img": "machines-controle-laser/05-robotplus.fr-controle-laser-5.jpg",
+      "focus": [
+       0.5,
+       0.5
+      ]
+     },
+     {
+      "img": "machines-controle-laser/06-robotplus.fr-controle-laser-6.jpg",
+      "focus": [
+       0.5,
+       0.45
+      ]
+     }
+    ],
+    "strip_h": 30
+   }
+  ]
+ }
+}

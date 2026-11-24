@@ -1,0 +1,241 @@
+{
+ "base": "lavage-dewatering-degraissage",
+ "page": "solutions/lavage-dewatering-degraissage.html",
+ "title": [
+  "Lavage,",
+  "dewatering,",
+  "dégraissage"
+ ],
+ "title_plain": "Lavage, dewatering, dégraissage",
+ "subtitle": "Machine de traitement en sortie de production : lavage, dégraissage, déshuilage, huilage, antirouille.",
+ "highlight": [
+  "Lavage, dewatering, dégraissage"
+ ],
+ "cover": {
+  "img": "categories/robotplus.fr-lavage-dewatering.jpg",
+  "focus": [
+   0.5,
+   0.55
+  ]
+ },
+ "cover_pt": 36,
+ "slash_h": 37,
+ "blocks": {
+  "title": {
+   "t": "title",
+   "lines": [
+    "Lavage,",
+    "dewatering,",
+    "dégraissage"
+   ],
+   "pt": 27,
+   "sh": 21
+  },
+  "lead": {
+   "t": "lead",
+   "text": "Une machine de traitement installée directement en sortie de production."
+  },
+  "p1": {
+   "t": "p",
+   "text": "Elle s’installe en sortie de **tours CN, tours multibroches, machines transfert, rectifieuses** ou **machines spéciales**."
+  },
+  "p2": {
+   "t": "p",
+   "text": "Elle permet d’optimiser les opérations de traitement inter-opération en réalisant rapidement différentes fonctions :"
+  },
+  "fonctions": {
+   "t": "rows",
+   "items": [
+    "Lavage inter-opération",
+    "Dégraissage",
+    "Déshuilage et dewatering",
+    "Huilage",
+    "Application de produits antirouille"
+   ],
+   "a4": {
+    "plain": true
+   }
+  },
+  "h_bain": {
+   "t": "h3",
+   "text": "Avec ou sans bain chauffant"
+  },
+  "p_bain": {
+   "t": "p",
+   "text": "La machine est disponible en version avec ou sans bain chauffant, équipé d’un **thermoplongeur** et d’un **régulateur de température**, selon les caractéristiques du produit utilisé et les exigences de l’application."
+  },
+  "h_mesure": {
+   "t": "h3",
+   "text": "Une solution sur mesure"
+  },
+  "p_mesure": {
+   "t": "p",
+   "text": "Chaque machine peut être entièrement conçue et adaptée aux besoins spécifiques de l’application, en fonction du type de machine de production, de la géométrie des pièces à traiter et du procédé souhaité."
+  },
+  "q": {
+   "t": "quote",
+   "text": "Cette machine permet de gagner du temps, de limiter les manipulations et d’intégrer directement le traitement des pièces dans le flux de production."
+  },
+  "apps": {
+   "t": "apps",
+   "title": "Applications",
+   "items": [
+    "Application d’antirouille en sortie de rectifieuse",
+    "Lavage inter-opération en ligne",
+    "Huilage de pièces mécaniques en sortie de production",
+    "Dégraissage de pièces mécaniques",
+    "Intégration dans un process usinage – dégraissage/lavage – contrôle en ligne"
+   ]
+  },
+  "cta": {
+   "t": "cta",
+   "text": "Un besoin particulier ? Contactez-nous pour donner vie à votre projet."
+  },
+  "ph_a": {
+   "img": "lavage-dewatering-degraissage/02-robotplus.fr-lavage-dewatering-2.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "t": "photo",
+   "fill": true
+  },
+  "ph_b1": {
+   "img": "lavage-dewatering-degraissage/06-robotplus.fr-lavage-dewatering-6.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "t": "photo",
+   "h": 44
+  },
+  "ph_b2": {
+   "img": "lavage-dewatering-degraissage/07-robotplus.fr-lavage-dewatering-7.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "t": "photo",
+   "fill": true
+  },
+  "ph_grid": {
+   "t": "photos",
+   "cols": 2,
+   "fill": true,
+   "imgs": [
+    {
+     "img": "lavage-dewatering-degraissage/01-robotplus.fr-lavage-dewatering-1.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ]
+    },
+    {
+     "img": "lavage-dewatering-degraissage/03-robotplus.fr-lavage-dewatering-3.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ]
+    },
+    {
+     "img": "lavage-dewatering-degraissage/08-robotplus.fr-lavage-dewatering-8.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ]
+    },
+    {
+     "img": "lavage-dewatering-degraissage/06-robotplus.fr-lavage-dewatering-6.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ]
+    }
+   ]
+  },
+  "ph_a4": {
+   "img": "lavage-dewatering-degraissage/06-robotplus.fr-lavage-dewatering-6.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "t": "photo",
+   "fill": true
+  }
+ },
+ "tri": {
+  "A": [
+   "title",
+   "lead",
+   "p1",
+   "p2",
+   "fonctions",
+   "ph_a"
+  ],
+  "B": [
+   "h_bain",
+   "p_bain",
+   "ph_b1",
+   "h_mesure",
+   "p_mesure",
+   "q",
+   "ph_b2"
+  ],
+  "C": [
+   "apps",
+   "ph_grid",
+   "cta"
+  ]
+ },
+ "a4": {
+  "head_h": 80,
+  "title_pt": 28,
+  "slash_h": 34,
+  "left": [
+   "lead",
+   "p1",
+   "p2",
+   "fonctions",
+   "h_bain",
+   "p_bain",
+   "h_mesure",
+   "p_mesure",
+   "q"
+  ],
+  "right": [
+   "apps",
+   "solutions"
+  ],
+  "strip": [
+   {
+    "img": "lavage-dewatering-degraissage/02-robotplus.fr-lavage-dewatering-2.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   {
+    "img": "lavage-dewatering-degraissage/06-robotplus.fr-lavage-dewatering-6.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   {
+    "img": "lavage-dewatering-degraissage/07-robotplus.fr-lavage-dewatering-7.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   {
+    "img": "lavage-dewatering-degraissage/08-robotplus.fr-lavage-dewatering-8.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   }
+  ],
+  "strip_h": 24
+ }
+}

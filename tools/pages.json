@@ -1,0 +1,164 @@
+{
+  "site_url": "https://robotplus-automatisme.github.io",
+  "pages": [
+    {
+      "file": "index.html",
+      "id": "home",
+      "nav": "home",
+      "description": "ROBOT+ Automatisme à Marnaz (Haute-Savoie) : robotique industrielle, machines de contrôle, contrôle laser et machines spéciales sur mesure depuis 1996.",
+      "image": "assets/photos/home/robotplus.fr-automatisme.jpg",
+      "preload": [
+        [
+          "assets/photos/home/robotplus.fr-automatisme.jpg",
+          "(min-width: 721px)"
+        ],
+        [
+          "assets/photos/home/robotplus.fr-automatisme-mobile.jpg",
+          "(max-width: 720px)"
+        ]
+      ]
+    },
+    {
+      "file": "solutions/robotique-industrielle.html",
+      "id": "robotique-industrielle",
+      "nav": "solutions",
+      "description": "Intégration de robots industriels : chargement et déchargement de machines, palettisation, contrôle, assemblage, cellules robotisées standards ou sur mesure.",
+      "image": "assets/photos/categories/robotplus.fr-robotique.jpg",
+      "gallery": "assets/photos/robotique-industrielle"
+    },
+    {
+      "file": "solutions/machines-controle.html",
+      "id": "machines-controle",
+      "nav": "solutions",
+      "description": "Machines de contrôle standards et sur mesure : contrôle dimensionnel, d’aspect, par caméra, laser, palpeurs ou courant de Foucault, et machines de tri.",
+      "image": "assets/photos/categories/robotplus.fr-machine-controle.jpg",
+      "gallery": "assets/photos/machines-controle"
+    },
+    {
+      "file": "solutions/machines-controle-laser.html",
+      "id": "machines-controle-laser",
+      "nav": "solutions",
+      "description": "Contrôle laser pour rectifieuses centerless et machines spéciales : contrôle post-process, tri OK/NOK, compensation thermique, asservissement de la machine.",
+      "image": "assets/photos/categories/robotplus.fr-controle-laser.jpg",
+      "gallery": "assets/photos/machines-controle-laser"
+    },
+    {
+      "file": "solutions/machines-speciales.html",
+      "id": "machines-speciales",
+      "nav": "solutions",
+      "description": "Machines spéciales sur mesure : conception, intégration et mise en service, avec un accompagnement de l’étude au démarrage de votre installation.",
+      "image": "assets/photos/categories/robotplus.fr-machines-speciales.jpg",
+      "gallery": "assets/photos/machines-speciales"
+    },
+    {
+      "file": "solutions/retrofit-machines.html",
+      "id": "retrofit-machines",
+      "nav": "solutions",
+      "description": "Rétrofit et robotisation de machines : robot Stäubli TX2-40 et contrôleur CS9, alimentation par rail vibrant, programmes de chargement et déchargement.",
+      "image": "assets/photos/categories/robotplus.fr-retrofit-machines.jpg",
+      "gallery": "assets/photos/retrofit-machines"
+    },
+    {
+      "file": "solutions/lavage-dewatering-degraissage.html",
+      "id": "lavage-dewatering-degraissage",
+      "nav": "solutions",
+      "description": "Machines de lavage inter-opération, dewatering et dégraissage en sortie de tours CN, multibroches, transferts et rectifieuses, avec ou sans bain chauffant.",
+      "image": "assets/photos/categories/robotplus.fr-lavage-dewatering.jpg",
+      "gallery": "assets/photos/lavage-dewatering-degraissage"
+    },
+    {
+      "file": "solutions/postes-de-travail.html",
+      "id": "postes-de-travail",
+      "nav": "solutions",
+      "description": "Postes de travail manuels ou semi-automatiques pour le contrôle, le montage, le SAV et le conditionnement : écran tactile, picking, code-barres, presse.",
+      "image": "assets/photos/categories/robotplus.fr-poste-de-travail.jpg",
+      "gallery": "assets/photos/postes-de-travail"
+    },
+    {
+      "file": "solutions/alimentation-convoyage-stockage.html",
+      "id": "alimentation-convoyage-stockage",
+      "nav": "solutions",
+      "description": "Alimentation, convoyage et stockage de pièces : bols vibrants, trémies, convoyeurs, élévateurs à lames, trémies pour axes et tables rotatives.",
+      "image": "assets/photos/categories/robotplus.fr-alimentations.jpg"
+    },
+    {
+      "file": "solutions/bols-vibrants.html",
+      "id": "bols-vibrants",
+      "nav": "solutions",
+      "description": "Bols vibrants ROBOTPLUS pour l’alimentation et l’orientation de pièces : exemples de réalisations de notre atelier de Marnaz (Haute-Savoie).",
+      "image": "assets/photos/categories/robotplus.fr-bols-vibrants.jpg",
+      "gallery": "assets/photos/bols-vibrants"
+    },
+    {
+      "file": "solutions/tremies.html",
+      "id": "tremies",
+      "nav": "solutions",
+      "description": "Trémies ROBOTPLUS pour le stockage en vrac et l’alimentation de bols vibrants : exemples de réalisations de notre atelier de Marnaz (Haute-Savoie).",
+      "image": "assets/photos/categories/robotplus.fr-tremies.jpg",
+      "gallery": "assets/photos/tremies"
+    },
+    {
+      "file": "solutions/convoyeurs.html",
+      "id": "convoyeurs",
+      "nav": "solutions",
+      "description": "Convoyeurs ROBOTPLUS pour le transport de pièces, de cartons et de contenants : exemples de réalisations de notre atelier de Marnaz (Haute-Savoie).",
+      "image": "assets/photos/categories/robotplus.fr-convoyeurs.jpg",
+      "gallery": "assets/photos/convoyeurs"
+    },
+    {
+      "file": "solutions/elevateurs-a-lames.html",
+      "id": "elevateurs-a-lames",
+      "nav": "solutions",
+      "description": "Élévateurs à lames ROBOTPLUS pour alimenter des pièces de type axes stockées en vrac : exemples de réalisations de notre atelier de Marnaz.",
+      "image": "assets/photos/categories/robotplus.fr-elevateurs-a-lames.jpg",
+      "gallery": "assets/photos/elevateurs-a-lames"
+    },
+    {
+      "file": "solutions/tremies-pour-axes.html",
+      "id": "tremies-pour-axes",
+      "nav": "solutions",
+      "description": "Trémies pour axes ROBOTPLUS : solutions de stockage et d’alimentation pour les axes, exemples de réalisations de notre atelier de Marnaz.",
+      "image": "assets/photos/categories/robotplus.fr-tremies-axes.jpg",
+      "gallery": "assets/photos/tremies-pour-axes"
+    },
+    {
+      "file": "solutions/stockage-de-pieces.html",
+      "id": "stockage-de-pieces",
+      "nav": "solutions",
+      "description": "Solutions ROBOTPLUS de stockage de pièces pour augmenter l’autonomie de vos machines et organiser vos flux : exemples de réalisations.",
+      "image": "assets/photos/categories/robotplus.fr-stockage-pieces.jpg",
+      "gallery": "assets/photos/stockage-de-pieces"
+    },
+    {
+      "file": "solutions/tables-rotatives-stockage.html",
+      "id": "tables-rotatives-stockage",
+      "nav": "solutions",
+      "description": "Tables rotatives de stockage ROBOTPLUS pour la réception de pièces, de cartons ou de paniers : exemples de réalisations de notre atelier.",
+      "image": "assets/photos/categories/robotplus.fr-tables-rotatives.jpg",
+      "gallery": "assets/photos/tables-rotatives-stockage"
+    },
+    {
+      "file": "mentions-legales.html",
+      "id": "mentions-legales",
+      "nav": "",
+      "description": "Mentions légales du site ROBOTPLUS (ROBOT+ Automatisme), Marnaz : éditeur, hébergement, propriété intellectuelle et données personnelles.",
+      "image": "assets/photos/home/robotplus.fr-automatisme.jpg"
+    },
+    {
+      "file": "politique-confidentialite.html",
+      "id": "politique-confidentialite",
+      "nav": "",
+      "description": "Politique de confidentialité de ROBOTPLUS : données traitées, finalités, base juridique, conservation, cookies et exercice de vos droits.",
+      "image": "assets/photos/home/robotplus.fr-automatisme.jpg"
+    },
+    {
+      "file": "404.html",
+      "id": "404",
+      "nav": "",
+      "description": "Page introuvable sur le site ROBOT+ Automatisme.",
+      "image": "assets/photos/home/robotplus.fr-automatisme.jpg",
+      "noindex": true,
+      "root": "/"
+    }
+  ]
+}

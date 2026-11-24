@@ -1,0 +1,226 @@
+{
+ "base": "retrofit-machines",
+ "page": "solutions/retrofit-machines.html",
+ "title": [
+  "Rétrofit",
+  "machines"
+ ],
+ "title_plain": "Rétrofit machines",
+ "subtitle": "Rétrofit et modernisation de machines industrielles : une seconde vie pour vos équipements.",
+ "highlight": [
+  "Rétrofit machines"
+ ],
+ "cover": {
+  "img": "categories/robotplus.fr-retrofit-machines.jpg",
+  "focus": [
+   0.5,
+   0.42
+  ]
+ },
+ "blocks": {
+  "title": {
+   "t": "title",
+   "lines": [
+    "Rétrofit",
+    "machines"
+   ]
+  },
+  "lead": {
+   "t": "lead",
+   "text": "Rétrofit et modernisation de machines industrielles."
+  },
+  "p1": {
+   "t": "p",
+   "text": "Nous vous accompagnons dans la modernisation et la mise à niveau de vos équipements industriels grâce à notre savoir-faire en matière de **rétrofit de machines**."
+  },
+  "p2": {
+   "t": "p",
+   "text": "Le rétrofit consiste à rénover et moderniser les installations existantes afin de **prolonger leur durée de vie**, d’**améliorer leurs performances** et de répondre aux exigences technologiques et réglementaires actuelles."
+  },
+  "h_interv": {
+   "t": "h3",
+   "text": "Notre intervention"
+  },
+  "interv": {
+   "t": "rows",
+   "items": [
+    "**Rétrofit électrique** : remise à niveau de l’armoire électrique, remplacement de l’automate programmable ou de la commande numérique (CN) par des équipements de dernière génération.",
+    "**Rétrofit mécanique** : rénovation ou remplacement de composants mécaniques afin d’améliorer la fiabilité, la précision et les performances de vos machines.",
+    "**Mise en conformité** : adaptation de vos équipements aux normes et exigences de sécurité en vigueur."
+   ]
+  },
+  "p3": {
+   "t": "p",
+   "text": "Chaque projet est étudié en fonction de vos besoins et des spécificités de vos équipements, afin de vous proposer une solution **adaptée et pérenne**."
+  },
+  "q": {
+   "t": "quote",
+   "text": "Notre objectif : donner une seconde vie à vos machines, optimiser leur fonctionnement et prolonger leur exploitation, tout en maîtrisant vos investissements."
+  },
+  "apps": {
+   "t": "apps",
+   "title": "Applications",
+   "items": [
+    "Remplacement d’automates programmables",
+    "Numérisation de machines",
+    "Rétrofit complet de machines"
+   ]
+  },
+  "cta": {
+   "t": "cta",
+   "text": "Un besoin particulier ? Contactez-nous pour donner vie à votre projet."
+  },
+  "ph_a": {
+   "img": "retrofit-machines/01-robotplus.fr-retrofit-machines-1.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "crop": [
+    0,
+    0,
+    0.495,
+    1
+   ],
+   "t": "photo",
+   "fill": true
+  },
+  "ph_b": {
+   "img": "retrofit-machines/02-robotplus.fr-retrofit-machines-2.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "crop": [
+    0.505,
+    0,
+    1,
+    1
+   ],
+   "t": "photo",
+   "fill": true
+  },
+  "ph_c": {
+   "img": "retrofit-machines/03-robotplus.fr-retrofit-machines-3.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "crop": [
+    0,
+    0,
+    0.495,
+    1
+   ],
+   "t": "photo",
+   "fill": true
+  },
+  "ph_a4": {
+   "img": "retrofit-machines/03-robotplus.fr-retrofit-machines-3.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "crop": [
+    0,
+    0,
+    0.495,
+    1
+   ],
+   "t": "photo",
+   "fill": true
+  }
+ },
+ "tri": {
+  "A": [
+   "title",
+   "lead",
+   "p1",
+   "p2",
+   "ph_a"
+  ],
+  "B": [
+   "h_interv",
+   "interv",
+   "p3",
+   "ph_b"
+  ],
+  "C": [
+   "apps",
+   "ph_c",
+   "q",
+   "cta"
+  ]
+ },
+ "a4": {
+  "left": [
+   "lead",
+   "p1",
+   "p2",
+   "h_interv",
+   "interv",
+   "p3",
+   "q"
+  ],
+  "right": [
+   "apps",
+   "ph_a4",
+   "solutions"
+  ],
+  "strip": [
+   {
+    "img": "retrofit-machines/02-robotplus.fr-retrofit-machines-2.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "crop": [
+     0,
+     0,
+     0.495,
+     1
+    ]
+   },
+   {
+    "img": "retrofit-machines/01-robotplus.fr-retrofit-machines-1.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "crop": [
+     0.505,
+     0,
+     1,
+     1
+    ]
+   },
+   {
+    "img": "retrofit-machines/03-robotplus.fr-retrofit-machines-3.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "crop": [
+     0.505,
+     0,
+     1,
+     1
+    ]
+   },
+   {
+    "img": "retrofit-machines/02-robotplus.fr-retrofit-machines-2.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "crop": [
+     0.505,
+     0,
+     1,
+     1
+    ]
+   }
+  ],
+  "strip_h": 30
+ }
+}

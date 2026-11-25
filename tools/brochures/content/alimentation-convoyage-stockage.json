@@ -1,0 +1,308 @@
+{
+ "base": "alimentation-convoyage-stockage",
+ "page": "solutions/alimentation-convoyage-stockage.html",
+ "title": [
+  "Alimentations,",
+  "convoyage,",
+  "stockage"
+ ],
+ "title_plain": "Alimentations, convoyage, stockage",
+ "subtitle": "Alimentation, orientation, convoyage et stockage de pièces : sept familles de produits.",
+ "highlight": [
+  "Alimentations, convoyage, stockage"
+ ],
+ "cover": {
+  "img": "categories/robotplus.fr-alimentations.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ "cover_pt": 33,
+ "slash_h": 37,
+ "blocks": {
+  "title": {
+   "t": "title",
+   "lines": [
+    "Alimentations,",
+    "convoyage,",
+    "stockage"
+   ],
+   "pt": 27,
+   "sh": 21
+  },
+  "lead": {
+   "t": "lead",
+   "text": "Alimenter, orienter, convoyer et stocker vos pièces."
+  },
+  "p1": {
+   "t": "p",
+   "text": "De l’alimentation des pièces au stockage, en passant par leur acheminement, nous concevons et réalisons des solutions adaptées aux exigences de vos process industriels."
+  },
+  "p2": {
+   "t": "p",
+   "text": "Grâce à nos différents savoir-faire, nous proposons une gamme complète d’équipements permettant d’assurer l’orientation, la distribution, le transfert et le stockage de vos pièces, avec fiabilité, précision et efficacité."
+  },
+  "cA": {
+   "t": "cards",
+   "cw": 36,
+   "h": 30,
+   "items": [
+    {
+     "img": "bols-vibrants/03-robotplus.fr-bols-vibrants-3.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Bols vibrants",
+     "text": "Alimentation, distribution et orientation automatique de pièces : un système de vibrations maîtrisé trie, oriente et achemine les pièces dans une position précise, pour une alimentation **régulière et fiable** de vos postes de production ou d’assemblage."
+    },
+    {
+     "img": "tremies/08-robotplus.fr-tremies-8.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Trémies",
+     "text": "Trémies vibrantes et trémies élévatrices, conçues et fabriquées **sur mesure** pour le stockage, l’alimentation et la distribution de pièces : dimensions, capacités de stockage, cadences d’alimentation."
+    }
+   ],
+   "fill": true
+  },
+  "cB": {
+   "t": "cards",
+   "cw": 36,
+   "h": 30,
+   "items": [
+    {
+     "img": "convoyeurs/16-robotplus.fr-convoyeurs-16.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Convoyeurs",
+     "text": "**Convoyage de pièces**, **convoyage de paniers** et stockage de pièces par accumulation. Chaque convoyeur est dimensionné selon votre cahier des charges : charges, vitesse, sens de circulation, encombrement."
+    },
+    {
+     "img": "elevateurs-a-lames/09-robotplus.fr-elevateurs-a-lames-9.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Élévateurs à lames",
+     "text": "Pour les pièces de révolution (axes, vis, tiges, entretoises…) : une alimentation fiable, **silencieuse** et très **autonome**, compacte, qui peut remplacer un ensemble bol vibrant et trémie. Gamme standard et réalisations sur mesure."
+    },
+    {
+     "img": "tremies-pour-axes/02-robotplus.fr-tremies-axes-2.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Trémies pour axes",
+     "text": "Stockage, alimentation et distribution de **pièces cylindriques**, telles que les axes : modèles standards ou solutions sur mesure, adaptées à vos pièces et à vos contraintes de production."
+    },
+    {
+     "img": "stockage-de-pieces/02-robotplus.fr-stockage-pieces-2.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Stockage de pièces",
+     "text": "**Gestion automatisée des paniers** en sortie de production : récupération, transfert et accumulation. Moins d’interventions manuelles, des flux fluidifiés et plus d’autonomie pour vos lignes."
+    }
+   ],
+   "fill": true
+  },
+  "cC": {
+   "t": "cards",
+   "cw": 36,
+   "h": 30,
+   "items": [
+    {
+     "img": "tables-rotatives-stockage/03-robotplus.fr-tables-rotatives-3.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Tables rotatives de stockage",
+     "text": "Stockage et distribution de pièces **en entrée de machine** (alimentation régulière) ou **en sortie de machine** (stockage et récupération en fin de cycle)."
+    }
+   ],
+   "fill": true
+  },
+  "cA4a": {
+   "t": "cards",
+   "cw": 38,
+   "h": 30,
+   "items": [
+    {
+     "img": "bols-vibrants/03-robotplus.fr-bols-vibrants-3.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Bols vibrants",
+     "text": "Alimentation, distribution et orientation automatique de pièces : un système de vibrations maîtrisé trie, oriente et achemine les pièces dans une position précise, pour une alimentation **régulière et fiable** de vos postes de production ou d’assemblage."
+    },
+    {
+     "img": "tremies/08-robotplus.fr-tremies-8.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Trémies",
+     "text": "Trémies vibrantes et trémies élévatrices, conçues et fabriquées **sur mesure** pour le stockage, l’alimentation et la distribution de pièces : dimensions, capacités de stockage, cadences d’alimentation."
+    },
+    {
+     "img": "convoyeurs/16-robotplus.fr-convoyeurs-16.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Convoyeurs",
+     "text": "**Convoyage de pièces**, **convoyage de paniers** et stockage de pièces par accumulation. Chaque convoyeur est dimensionné selon votre cahier des charges : charges, vitesse, sens de circulation, encombrement."
+    }
+   ],
+   "fill": true
+  },
+  "cA4b": {
+   "t": "cards",
+   "cw": 38,
+   "h": 30,
+   "items": [
+    {
+     "img": "elevateurs-a-lames/09-robotplus.fr-elevateurs-a-lames-9.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Élévateurs à lames",
+     "text": "Pour les pièces de révolution (axes, vis, tiges, entretoises…) : une alimentation fiable, **silencieuse** et très **autonome**, compacte, qui peut remplacer un ensemble bol vibrant et trémie. Gamme standard et réalisations sur mesure."
+    },
+    {
+     "img": "tremies-pour-axes/02-robotplus.fr-tremies-axes-2.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Trémies pour axes",
+     "text": "Stockage, alimentation et distribution de **pièces cylindriques**, telles que les axes : modèles standards ou solutions sur mesure, adaptées à vos pièces et à vos contraintes de production."
+    },
+    {
+     "img": "stockage-de-pieces/02-robotplus.fr-stockage-pieces-2.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Stockage de pièces",
+     "text": "**Gestion automatisée des paniers** en sortie de production : récupération, transfert et accumulation. Moins d’interventions manuelles, des flux fluidifiés et plus d’autonomie pour vos lignes."
+    },
+    {
+     "img": "tables-rotatives-stockage/03-robotplus.fr-tables-rotatives-3.jpg",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "title": "Tables rotatives de stockage",
+     "text": "Stockage et distribution de pièces **en entrée de machine** (alimentation régulière) ou **en sortie de machine** (stockage et récupération en fin de cycle)."
+    }
+   ],
+   "fill": true
+  },
+  "apps": {
+   "t": "apps",
+   "title": "Applications",
+   "items": [
+    "Alimentation de machines de production et de machines spéciales",
+    "Alimentation de rectifieuse centerless en enfilade",
+    "Remplacement de bols vibrants existants",
+    "Augmentation d’autonomie sur machines existantes",
+    "Convoyage de pièces en entrée et en sortie de machine",
+    "Convoyage de paniers, stockage de pièces par accumulation",
+    "Gestion automatique des paniers : empilage, dépilage, traçabilité"
+   ]
+  },
+  "q": {
+   "t": "quote",
+   "text": "Chaque solution est pensée pour répondre à vos besoins spécifiques et s’intégrer au mieux dans votre environnement de production."
+  },
+  "cta": {
+   "t": "cta",
+   "text": "Un besoin particulier ? Contactez-nous pour donner vie à votre projet."
+  },
+  "ph_p1": {
+   "img": "categories/robotplus.fr-tremies.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "t": "photo",
+   "fill": true
+  },
+  "ph_p2": {
+   "img": "categories/robotplus.fr-tables-rotatives.jpg",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "t": "photo",
+   "fill": true
+  }
+ },
+ "tri": {
+  "A": [
+   "title",
+   "lead",
+   "p1",
+   "p2",
+   "cA"
+  ],
+  "B": [
+   "cB"
+  ],
+  "C": [
+   "cC",
+   "apps",
+   "q",
+   "cta"
+  ]
+ },
+ "a4": {
+  "pages": [
+   {
+    "head_h": 80,
+    "title_pt": 28,
+    "slash_h": 34,
+    "left": [
+     "lead",
+     "p1",
+     "p2",
+     "cA4a"
+    ],
+    "right": [
+     "apps",
+     "ph_p1"
+    ],
+    "strip": null
+   },
+   {
+    "head": "slim",
+    "slim_title": [
+     "Alimentations,",
+     "convoyage, stockage"
+    ],
+    "hero": null,
+    "left": [
+     "cA4b",
+     "q",
+     "cta"
+    ],
+    "right": [
+     "ph_p2",
+     "solutions"
+    ],
+    "strip": null
+   }
+  ]
+ }
+}

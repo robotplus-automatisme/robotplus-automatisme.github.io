@@ -1,0 +1,26 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo-link" href="{{home}}#accueil"><img src="{{root}}assets/images/robotplus-logo.png" width="{{logo_w}}" height="{{logo_h}}" alt="ROBOT+ Automatisme"></a>
+    <button class="nav-toggle" type="button" aria-label="Menu" data-i18n-aria="common.menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav">
+      <a{{active_home}} href="{{home}}#accueil" data-i18n="nav.home">Accueil</a>
+      <a href="{{home}}#entreprise" data-i18n="nav.company">L’entreprise</a>
+      <a{{active_solutions}} href="{{home}}#solutions" data-i18n="nav.solutions">Solutions</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-contact">
+      <span class="phone-icon"><svg class="phone-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.7 3.8 9.2 3a1.7 1.7 0 0 1 2 1l1.1 3a1.7 1.7 0 0 1-.5 1.8l-1.7 1.4a12.8 12.8 0 0 0 4.7 4.7l1.4-1.7a1.7 1.7 0 0 1 1.8-.5l3 1.1a1.7 1.7 0 0 1 1 2l-.8 2.5a1.7 1.7 0 0 1-1.6 1.2C11.8 20.5 3.5 12.2 3.5 4.4a1.7 1.7 0 0 1 1.2-1.6Z"/></svg></span>
+      <a href="tel:+33450963828">+33 4 50 96 38 28</a>
+      <button class="lang-button" type="button" aria-expanded="false" aria-controls="lang-menu"><img class="flag" id="lang-flag" src="{{root}}assets/icons/flags/fr.svg" width="20" height="14" alt="Français"> <span id="lang-code">FR</span>⌄</button>
+      <div class="lang-menu" id="lang-menu" role="group" aria-label="Choisir la langue" data-i18n-aria="common.language">
+        <a href="#fr" data-lang="fr" lang="fr"><img class="flag" src="{{root}}assets/icons/flags/fr.svg" width="20" height="14" alt=""> FR</a>
+        <a href="#en" data-lang="en" lang="en"><img class="flag" src="{{root}}assets/icons/flags/en.svg" width="20" height="14" alt=""> EN</a>
+        <a href="#it" data-lang="it" lang="it"><img class="flag" src="{{root}}assets/icons/flags/it.svg" width="20" height="14" alt=""> IT</a>
+        <a href="#de" data-lang="de" lang="de"><img class="flag" src="{{root}}assets/icons/flags/de.svg" width="20" height="14" alt=""> DE</a>
+        <a href="#es" data-lang="es" lang="es"><img class="flag" src="{{root}}assets/icons/flags/es.svg" width="20" height="14" alt=""> ES</a>
+        <a href="#pt" data-lang="pt" lang="pt"><img class="flag" src="{{root}}assets/icons/flags/pt.svg" width="20" height="14" alt=""> PT</a>
+        <a href="#ro" data-lang="ro" lang="ro"><img class="flag" src="{{root}}assets/icons/flags/ro.svg" width="20" height="14" alt=""> RO</a>
+      </div>
+    </div>
+  </div>
+</header>
